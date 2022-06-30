@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(){
-	int i,j,n;
+	int layers,width,in;
 	printf("how tall do you want your pyramid?:");
-	scanf("%d", &n);
-	for (i=0;i<n;i++) {
-		for(j=0;j<n;j++) {
-			if (j<n-i-1) {
+	scanf("%d", &in);
+	for (layers=0;layers<in;layers++) {
+		for(width=0;width<in;width++) {
+			if (width<in-layers-1) {
 				printf(" ");
 			} else {
 			       printf("* ");	
